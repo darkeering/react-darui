@@ -1,0 +1,42 @@
+.dar-load-container {
+  display: inline-flex;
+}
+.dar-load-span {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 20px;
+  height: 20px;
+  animation: dar-load-rotate 1s linear infinite;
+}
+.dar-load-item {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  background-color: #1890ff;
+  border-radius: 100px;
+  animation: dar-load-opacity 1.5s linear infinite;
+  transform: scale(0.75);
+}
+@keyframes dar-load-rotate {
+  0% {
+    transform: rotate(0) scale(0.7);
+  }
+  50% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(0.7);
+  }
+}
+@keyframes dar-load-opacity {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}

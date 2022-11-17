@@ -1,0 +1,71 @@
+.dar-noti-container {
+  position: fixed;
+  right: 0px;
+  top: 24px;
+  z-index: 1000;
+  margin-right: 20px;
+}
+
+.dar-noti-item {
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d;
+  padding: 16px 24px;
+  animation: dar-noti-in 0.25s;
+  margin-bottom: 10px;
+  transition: all 0.25s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.dar-noti-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dar-noti-item-title {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.dar-noti-item-content {
+  word-wrap: break-word;
+  width: calc(100% - 16px);
+}
+
+.dar-noti-item-close {
+  opacity: 0.5;
+  font-size: 16px;
+  transition: all 0.25s ease-in-out;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.dar-noti-item-out {
+  animation: dar-noti-leave 0.25s;
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+@keyframes dar-noti-in {
+  from {
+    transform: translateX(200px);
+  }
+
+  to {
+    transform: translateX(0)
+  }
+}
+
+@keyframes dar-noti-leave {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translateY(-100%)
+  }
+}

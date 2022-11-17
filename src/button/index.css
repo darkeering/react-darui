@@ -1,0 +1,50 @@
+.dar-button {
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  line-height: 1.5;
+}
+.dar-button:hover {
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+}
+.dar-button-primary {
+  background-color: #40a9ff;
+  border: none;
+  color: #fff;
+  padding: 4px 15px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.dar-button-wave {
+  position: relative;
+}
+.dar-button-wave::after {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  bottom: -1px;
+  right: -1px;
+  border: 1px solid #1890ff;
+  border-radius: 4px;
+  opacity: 0.2;
+  animation: fadeEffect 2s cubic-bezier(0.08, 0.82, 0.17, 1), waveEffect 0.4s cubic-bezier(0.08, 0.82, 0.17, 1);
+  animation-fill-mode: forwards;
+  display: block;
+  pointer-events: none;
+}
+@keyframes waveEffect {
+  100% {
+    top: -6px;
+    left: -6px;
+    bottom: -6px;
+    right: -6px;
+    border-width: 6px;
+  }
+}
+@keyframes fadeEffect {
+  100% {
+    opacity: 0;
+  }
+}

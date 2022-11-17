@@ -1,0 +1,91 @@
+.dar-carousel-container {
+  position: relative;
+  height: 200px;
+  background-color: rgb(54, 77, 121);
+  overflow: hidden;
+}
+
+.dar-carousel-quick {
+  position: absolute;
+  color: #fff;
+  background-color: transparent;
+  transition: all 0.25s ease-in-out;
+  z-index: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 40%;
+}
+.dar-carousel-pre {
+  &:hover .dar-carousel-pre-icon{
+    transform: scale(2);
+  }
+}
+.dar-carousel-pre-icon {
+  transition: all 0.25s ease-in-out;
+  position: absolute;
+  left: 20px;
+  transform: scale(0);
+}
+.dar-carousel-next {
+  right: 0;
+  &:hover .dar-carousel-next-icon{
+    transform: scale(2);
+  }
+}
+.dar-carousel-next-icon {
+  transition: all 0.25s ease-in-out;
+  position: absolute;
+  right: 20px;
+  transform: scale(0);
+}
+
+.dar-carousel-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  position: absolute;
+}
+
+.dar-carousel-dots {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dar-carousel-dot {
+  width: 16px;
+  height: 3px;
+  border-radius: 100px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.6;
+  cursor: pointer;
+  margin: 4px;
+  position: relative;
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    inset: -4px;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+
+}
+
+.dar-carousel-dot.dar-carousel-dot-active {
+  opacity: 1;
+  width: 24px;
+}
+
+.dar-carousel-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+}

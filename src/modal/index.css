@@ -1,0 +1,120 @@
+.dar-modal-mask {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 900;
+  background-color: #000;
+  top: 0;
+  opacity: 0;
+  animation: dar-modal-mask 0.25s;
+}
+.dar-modal-container {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 24px;
+  z-index: 1000;
+}
+.dar-modal-display0 {
+  opacity: 0;
+  transform: scale(1);
+}
+.dar-modal-hidden {
+  opacity: 0;
+  transform: scale(0);
+}
+.dar-modal-item {
+  min-width: 500px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.dar-modal-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 16px 24px;
+}
+.dar-modal-item-title {
+  font-size: 20px;
+  font-weight: 400;
+}
+.dar-modal-item-content {
+  word-wrap: break-word;
+  padding: 16px 24px;
+}
+.dar-modal-item-close {
+  opacity: 0.5;
+  font-size: 16px;
+  transition: all 0.25s ease-in-out;
+}
+.dar-modal-item-close:hover {
+  opacity: 1;
+}
+.dar-modal-item-bottom {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding: 16px 24px;
+  justify-content: flex-end;
+}
+.dar-modal-item-button {
+  margin-left: 10px;
+}
+.dar-modal-item-in {
+  animation: dar-modal-in 0.25s;
+  transform: scale(1);
+  opacity: 1;
+}
+.dar-modal-item-out {
+  animation: dar-modal-leave 0.25s;
+  transform: scale(0);
+  opacity: 0;
+}
+.dar-modal-mask-in {
+  animation: dar-modal-mask-in 0.25s;
+  opacity: 0.5;
+}
+.dar-modal-mask-out {
+  animation: dar-modal-mask-leave 0.25s;
+  opacity: 0;
+}
+@keyframes dar-modal-mask-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+@keyframes dar-modal-mask-leave {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes dar-modal-in {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes dar-modal-leave {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
