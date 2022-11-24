@@ -7,7 +7,7 @@ import {
 } from '@ant-design/icons';
 import React, { Component, createRef } from 'react';
 import { createPortal } from 'react-dom';
-import './index.less';
+import './index.css';
 
 const config = ['一', '二', '三', '四', '五', '六', '日'];
 

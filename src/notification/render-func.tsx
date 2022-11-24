@@ -2,7 +2,7 @@ import { CloseOutlined } from '@ant-design/icons';
 import React, { Component, useState } from 'react';
 import ReactDOM, { createPortal } from 'react-dom';
 import { Button } from 'react-darui';
-import './index.less';
+import './index.css';
 
 export class NotificationContainer extends Component<any, any> {
   constructor() {

@@ -1,7 +1,7 @@
 import { RightOutlined } from '@ant-design/icons';
 import React, { cloneElement, Component, createRef, ReactNode } from 'react';
 import { Context } from './context';
-import './index.less';
+import './index.css';
 import { MenuItem } from './types';
 type IProps = {
   items: MenuItem[];

@@ -3,11 +3,6 @@ export type MenuItem = {
   title: string;
   active?: boolean;
   children?: MenuItem[];
-  level?: number;
   open?: boolean;
-  subNum?: number;
   parent?: MenuItem;
-  add: () => void;
-  setActive: () => void;
-
 };

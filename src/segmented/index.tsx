@@ -1,5 +1,5 @@
 import React, { Component, createRef } from 'react';
-import './index.less';
+import './index.css';
 
 type option = {
   key: string | number;

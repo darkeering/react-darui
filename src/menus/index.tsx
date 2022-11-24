@@ -1,6 +1,6 @@
 import React from 'react';
 import { createPortal } from 'react-dom';
-import './index.less';
+import './index.css';
 
 const doc = document.body;
 export type dropdownItem = {

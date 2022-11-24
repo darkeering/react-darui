@@ -1,11 +1,11 @@
 import React, { PropsWithChildren, useEffect, useRef, useState } from 'react';
 import { Input, Menus } from 'react-darui';
 import { createPortal } from 'react-dom';
-import './index.less';
+import './index.css';
 type dropdownItem = {
   key: string | number;
   title: string;
-} & string;
+} | string;
 type IProps = {
   /**
    * @description 下拉菜单

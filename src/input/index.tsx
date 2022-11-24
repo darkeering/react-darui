@@ -1,5 +1,5 @@
 import React, { PropsWithChildren, Ref, useEffect, useImperativeHandle, useState } from 'react';
-import './index.less';
+import './index.css';
 type IProps = {
   /**
    * @description 输入事件

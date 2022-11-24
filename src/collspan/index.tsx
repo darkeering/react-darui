@@ -1,7 +1,7 @@
 import React, { cloneElement, Component, createRef, ReactNode } from 'react';
 import { Context } from './context';
 import { CollspanList } from 'react-darui';
-import './index.less';
+import './index.css';
 import { MenuItem } from './types';
 type IProps = {
   /**

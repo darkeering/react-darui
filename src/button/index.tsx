@@ -1,5 +1,5 @@
 import React, { PropsWithChildren, useState } from 'react';
-import './index.less';
+import './index.css';
 type IProps = PropsWithChildren & {
   /**
    * @description 点击事件

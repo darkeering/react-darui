@@ -1,6 +1,6 @@
 import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 import React, { Component, createRef } from 'react';
-import './index.less';
+import './index.css';
 
 export class CarouselItem extends Component<any, any> {
   render() {

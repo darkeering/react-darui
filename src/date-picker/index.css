@@ -1,3 +1,22 @@
+.dar-date-input-container {
+  position: relative;
+  display: inline-flex;
+  width: 120px;
+  height: 30px;
+}
+.dar-date-input {
+  width: 100%;
+  position: absolute;
+  box-sizing: border-box;
+}
+.dar-date-canlendar-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.4;
+  font-size: 14px;
+}
 .dar-date-container {
   margin-top: 5px;
   width: 280px;
@@ -6,8 +25,15 @@
   box-shadow: 0 3px 6px -4px #0000001f, 0 6px 16px #00000014, 0 9px 28px 8px #0000000d;
   border-radius: 2px;
   font-size: 14px;
-  animation: dar-date-in 0.25s;
   transform-origin: 0 0;
+}
+.dar-date-in {
+  animation: dar-date-in 0.25s;
+  transform: scale(1);
+}
+.dar-date-leave {
+  animation: dar-date-leave 0.25s;
+  transform: scale(0);
 }
 @keyframes dar-date-in {
   from {
@@ -15,6 +41,14 @@
   }
   to {
     transform: scale(1);
+  }
+}
+@keyframes dar-date-leave {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
   }
 }
 .dar-date-header {
@@ -39,13 +73,14 @@
   display: flex;
 }
 .dar-date-range div {
-  margin: 0 5px;
+  margin: 0 3px;
 }
 .dar-date-body {
   padding: 0 8px;
 }
 .dar-date-calendar {
   text-align: center;
+  border-spacing: 0;
 }
 .dar-date-calendar th {
   width: 36px;
@@ -65,9 +100,18 @@
   font-weight: 400;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
+  border-radius: 2px;
+  border: 1px solid transparent;
 }
 .dar-date-calendar td:hover {
   background-color: #f5f5f5;
+}
+.dar-date-calendar td.dar-date-selected {
+  background-color: #1890ff;
+  color: #fff !important;
+}
+.dar-date-calendar td.dar-date-today {
+  border: 1px solid #1890ff;
 }
 .dar-date-footer {
   display: flex;

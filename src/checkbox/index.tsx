@@ -1,6 +1,6 @@
 import { CheckOutlined } from '@ant-design/icons';
 import React, { Component } from 'react';
-import './index.less';
+import './index.css';
 type IProps = {
     /**
    * @description 默认选中状态

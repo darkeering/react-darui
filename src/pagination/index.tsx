@@ -6,7 +6,7 @@ import {
   RightOutlined,
 } from '@ant-design/icons';
 import React, { Component } from 'react';
-import './index.less';
+import './index.css';
 
 const Pre5 = (
   <div style={{ position: 'relative', fontSize: '16px' }}>

@@ -2,7 +2,7 @@ import { CloseOutlined } from '@ant-design/icons';
 import React, { Component, createRef, useState } from 'react';
 import ReactDOM, { createPortal } from 'react-dom';
 import { Button } from 'react-darui';
-import './index.less';
+import './index.css';
 
 export class ModalContainer extends Component<any, any> {
   myRef = createRef<any>();
