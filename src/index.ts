@@ -14,3 +14,4 @@ export * from './modal';
 export * from './loading';
 export * from './carousel';
 export * from './date-picker';
+export * from './table';
