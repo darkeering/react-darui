@@ -44,7 +44,7 @@ type IProps = {
    */
    current?: number;
 };
-export class Pagination extends Component<IProps, any> {
+export class Pagination extends Component<any, any> {
   constructor(props) {
     super(props);
     const size = props.size || 10;

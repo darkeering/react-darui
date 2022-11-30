@@ -29,7 +29,7 @@ type IState = {
    */
   animationLeft?: number;
 };
-export class Segmented extends Component<IProps, IState> {
+export class Segmented extends Component<any, IState> {
   myRef = createRef<any>();
   constructor(props: IProps) {
     super(props);

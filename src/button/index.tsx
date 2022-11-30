@@ -12,7 +12,7 @@ type IProps = PropsWithChildren & {
   type?: string;
   className: any;
 };
-export function Button(props: IProps) {
+export function Button(props: any) {
   const [wave, setwave] = useState(false);
   let timer = 0;
   const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {

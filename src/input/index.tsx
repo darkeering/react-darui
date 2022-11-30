@@ -12,7 +12,7 @@ type IProps = {
   placeholder?: string;
   onRef?: Ref<{ setinputValue: (value: string) => void }>;
 };
-function Input({ onChange, placeholder, onRef }: IProps, ref: any) {
+function Input({ onChange, placeholder, onRef }: any, ref: any) {
   const [inputValue, setinputValue] = useState('');
   useImperativeHandle(onRef, () => {
     return {

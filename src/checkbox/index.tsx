@@ -13,7 +13,7 @@ type IProps = {
    */
      disabled?: boolean;
 }
-export class Checkbox extends Component<IProps, any> {
+export class Checkbox extends Component<any, any> {
   constructor(props) {
     super(props);
     this.state = {

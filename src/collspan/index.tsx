@@ -21,7 +21,7 @@ type IProps = {
 type IState = {
   items: MenuItem[];
 };
-export class Collspan extends Component<IProps, IState> {
+export class Collspan extends Component<any, IState> {
   constructor() {
     super();
     this.state = {

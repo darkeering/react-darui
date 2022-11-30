@@ -13,7 +13,7 @@ type IProps = {
    */
   items?: dropdownItem[];
 };
-export function AutoComplete({ items = [] }: IProps) {
+export function AutoComplete({ items = [] }: any) {
   const [visible, setvisible] = useState(false);
   const [position, setposition] = useState<{ x?: number; y?: number; w?: number }>({});
   const [typeCode, settypeCode] = useState('');

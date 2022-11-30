@@ -10,6 +10,7 @@ export default class index extends Component {
           <CarouselItem>222</CarouselItem>
           <CarouselItem>333</CarouselItem>
           <CarouselItem>444</CarouselItem>
+          555
         </Carousel>
       </div>
     );

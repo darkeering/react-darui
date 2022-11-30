@@ -29,10 +29,11 @@ export class Carousel extends Component<any, any> {
     };
   }
   componentDidMount(): void {
+    const count = this.state.count
     React.Children.forEach(this.props.children, (child, i) => {
-      if (child.type.name === 'CarouselItem') this.state.count.push({});
+      if (child.type === CarouselItem) count.push({});
     });
-    this.setState({ count: this.state.count });
+    this.setState({ count });
   }
   goTo = (index) => {
     this.setState(() => {
@@ -85,7 +86,7 @@ export class Carousel extends Component<any, any> {
           >
             {count.length &&
               React.Children.map(this.props.children, (child, i) => {
-                if (child.type.name === 'CarouselItem')
+                if (child.type === CarouselItem)
                   return React.cloneElement(child, {
                     translate: count[i]['translate'],
                   });

@@ -25,7 +25,7 @@ export function Menus({
   position = { x: -1000, y: -1000 },
   items = [],
   onClick,
-}: IProps) {
+}: any) {
   return (
     <>
       {createPortal(

@@ -13,7 +13,7 @@ type IProps = {
    */
   disabled?: boolean;
 };
-export class Switch extends Component<IProps, any> {
+export class Switch extends Component<any, any> {
   constructor(props) {
     super(props);
     this.state = {
